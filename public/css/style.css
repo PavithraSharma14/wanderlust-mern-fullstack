@@ -1,0 +1,180 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+    display: flex;
+    flex-direction: column;
+    min-width: 100vh;
+}
+
+.container {
+    flex: 1;
+}
+
+/* Navbar */
+.navbar {
+    height: 5rem;
+    background-color: white;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+    font-size: 1.15rem;
+    color: #FF5A5F !important;
+    text-decoration: none;
+}
+
+.navbar-brand i {
+    font-size: 1.5rem;
+    color: #FF5A5F;
+    vertical-align: middle;
+}
+
+.navbar-brand p {
+    margin-bottom: 0;
+    font-size: 1.12rem;
+    color: #FF5A5F;
+    font-weight: 700;
+}
+.nav-link {
+    color: #222222 !important;
+}
+
+/* Footer */
+.f-info-links a {
+    text-decoration: none;
+    color: #222222;
+}
+
+.f-info-links a:hover {
+    text-decoration: underline;
+}
+
+.f-info-links, .f-info-socials, .f-info-brand {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.f-info-socials i {
+    font-size: 1.2rem;
+    margin-right: 1rem;
+}
+
+.f-info {
+    text-align: center;
+    height: 8rem;
+    background-color: #ebebeb;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+}
+
+/* Cards */
+.listing-card {
+    border: none !important;
+    margin-bottom: 2rem;
+}
+
+.card-img-top {
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+
+#card-badge {
+    position: absolute;
+     top: 10px; 
+     left: 10px; 
+     background: rgba(255,255,255,0.85); 
+     font-weight: bold; 
+     border-radius: 0.5rem; 
+     padding: 0.3em 0.7em;
+    z-index: 2;
+}
+
+.card-body {
+    padding: 0 !important;
+}
+
+.card-text p {
+    font-weight: 400 !important;
+}
+
+.listing-link {
+    text-decoration: none;
+}
+
+/* Card Effect */
+.card-img-overlay {
+    opacity: 0;
+}
+
+.card-img-overlay:hover {
+    opacity: 0.2;
+    background-color: white;
+}
+
+/* New Page */
+.add-btn {
+    background-color: #FF5A5F !important;
+    border: none !important;
+}
+
+/* Edit Page */
+
+.edit-btn {
+    background-color:#FF5A5F !important;
+    border: none !important;
+}
+
+/* Show Page */
+.show-img {
+    height: 30vh;
+}
+
+.btns {
+    display: flex !important;
+}
+
+.show-card {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.place-offers-section ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 1.3rem;
+    margin-top: 1rem;
+}
+
+.place-offers-section ul li {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    color: #222;
+    margin-bottom: 0.9rem;
+}
+
+.place-offers-section ul li i {
+    opacity: 0.9;
+    margin-right: 0.7em;
+    font-size: 1.2em;
+    min-width: 26px;
+    text-align: center;
+}
+
+/* Map */
+#map {
+    height: 25rem;
+    width: 45rem;
+}
