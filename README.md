@@ -32,21 +32,17 @@ Deployment: Render
 🧩 Folder Structure
 
 Wanderlust/
-│
 ├── controllers/
 │   ├── listings.js
 │   ├── reviews.js
 │   └── users.js
-│
 ├── init/
 │   ├── data.js
 │   └── index.js
-│
 ├── models/
 │   ├── listing.js
 │   ├── review.js
 │   └── user.js
-│
 ├── public/
 │   ├── css/
 │   │   ├── rating.css
@@ -54,16 +50,13 @@ Wanderlust/
 │   └── js/
 │       ├── map.js
 │       └── script.js
-│
 ├── routes/
 │   ├── listing.js
 │   ├── review.js
 │   └── user.js
-│
 ├── utils/
 │   ├── ExpressError.js
 │   └── wrapAsync.js
-│
 ├── views/
 │   ├── includes/
 │   │   ├── flash.ejs
@@ -76,7 +69,6 @@ Wanderlust/
 │   │   ├── login.ejs
 │   │   └── signup.ejs
 │   └── error.ejs
-│
 ├── .env
 ├── .gitignore
 ├── app.js
@@ -87,6 +79,7 @@ Wanderlust/
 ├── package.json
 ├── README.md
 └── schema.js
+
 
 🔁 How It Works — Application Workflow
 flowchart TD
@@ -102,6 +95,7 @@ flowchart TD
     J --> K[Owner Edits or Deletes Listing ✏️❌]
     K --> L[Reviews Auto-Deleted by Mongoose Middleware ⚙️]
     L --> M[All Updates Synced on Render 🚀]
+
 
 🧰 Installation & Setup
 
@@ -155,9 +149,9 @@ This project is licensed under the MIT License — see the LICENSE
 
 💬 Connect with Me
 
-👩‍💻 Developer: Pavithra Sharma
-💼 LinkedIn: www.linkedin.com/in/pavithrasharma
-🐙 GitHub: https://github.com/PavithraSharma14
+👩‍💻 Developer: Pavithra Sharma <br>
+💼 LinkedIn: www.linkedin.com/in/pavithrasharma <br>
+🐙 GitHub: https://github.com/PavithraSharma14 <br>
 
 
 
