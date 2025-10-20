@@ -5,14 +5,14 @@ It lets users explore, create, and review travel destinations with full authenti
 
 🧠 Tech Stack
 
-Backend: Node.js, Express.js
-Database: MongoDB (Mongoose ODM)
-Templating Engine: EJS
-Validation: Joi (Server-Side) & JS (Client-Side)
-Authentication: Passport.js
-File Uploads: Cloudinary
-Maps: Mapbox
-Deployment: Render
+Backend: Node.js, Express.js <br>
+Database: MongoDB (Mongoose ODM)<br>
+Templating Engine: EJS<br>
+Validation: Joi (Server-Side) & JS (Client-Side)<br>
+Authentication: Passport.js<br>
+File Uploads: Cloudinary<br>
+Maps: Mapbox<br>
+Deployment: Render<br>
 
 ⚙️ Key Features
 
@@ -37,18 +37,16 @@ Wanderlust/
 │   ├── reviews.js
 │   └── users.js
 ├── init/
-│   ├── data.js
-│   └── index.js
+│   └── data.js
 ├── models/
 │   ├── listing.js
-│   ├── review.js
-│   └── user.js
+│   └── review.js
 ├── public/
 │   ├── css/
 │   │   ├── rating.css
 │   │   └── style.css
 │   └── js/
-│       ├── map.js
+│       ├── maps.js
 │       └── script.js
 ├── routes/
 │   ├── listing.js
@@ -56,44 +54,47 @@ Wanderlust/
 │   └── user.js
 ├── utils/
 │   ├── ExpressError.js
-│   └── wrapAsync.js
+│   ├── wrapAsync.js
+│   └── middleware.js
 ├── views/
 │   ├── includes/
-│   │   ├── flash.ejs
-│   │   ├── footer.ejs
-│   │   └── navbar.ejs
+│   │   └── flash.ejs
 │   ├── layouts/
 │   │   └── boilerplate.ejs
 │   ├── listings/
+│   │   ├── footer.ejs
+│   │   ├── navbar.ejs
+│   │   ├── index.ejs
+│   │   └── show.ejs
 │   ├── users/
 │   │   ├── login.ejs
-│   │   └── signup.ejs
+│   │   ├── signup.ejs
+│   │   └── error.ejs
 │   └── error.ejs
-├── .env
-├── .gitignore
-├── app.js
 ├── cloudConfig.js
 ├── LICENSE
 ├── middleware.js
 ├── package-lock.json
 ├── package.json
+├── app.js
 ├── README.md
 └── schema.js
 
 
-🔁 How It Works — Application Workflow
-flowchart TD
-    A[User Visits Wanderlust 🌍] --> B[Views Listings 🏕️]
-    B --> C[Registers / Logs In 🔐]
-    C --> D[Creates New Listing ➕]
-    D --> E[Uploads Images to Cloudinary ☁️]
-    E --> F[Adds Map Location via Mapbox 🗺️]
-    F --> G[Submits Form → Joi Validation ✅]
-    G --> H[Data Saved to MongoDB 💾]
-    H --> I[Success Flash Message ✨]
-    I --> J[Other Users Add Reviews 💬]
-    J --> K[Owner Edits or Deletes Listing ✏️❌]
-    K --> L[Reviews Auto-Deleted by Mongoose Middleware ⚙️]
+
+🔁 How It Works — Application Workflow<br>
+flowchart TD<br>
+    A[User Visits Wanderlust 🌍] --> B[Views Listings 🏕️]<br>
+    B --> C[Registers / Logs In 🔐]<br>
+    C --> D[Creates New Listing ➕]<br>
+    D --> E[Uploads Images to Cloudinary ☁️]<br>
+    E --> F[Adds Map Location via Mapbox 🗺️]<br>
+    F --> G[Submits Form → Joi Validation ✅]<br>
+    G --> H[Data Saved to MongoDB 💾]<br>
+    H --> I[Success Flash Message ✨]<br>
+    I --> J[Other Users Add Reviews 💬]<br>
+    J --> K[Owner Edits or Deletes Listing ✏️❌]<br>
+    K --> L[Reviews Auto-Deleted by Mongoose Middleware ⚙️]<br>
     L --> M[All Updates Synced on Render 🚀]
 
 
