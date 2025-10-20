@@ -31,54 +31,54 @@ Deployment: Render<br>
 
 🧩 Folder Structure
 
-Wanderlust/
-├── controllers/
-│   ├── listings.js
-│   ├── reviews.js
-│   └── users.js
-├── init/
-│   └── data.js
-├── models/
-│   ├── listing.js
-│   └── review.js
-├── public/
-│   ├── css/
-│   │   ├── rating.css
-│   │   └── style.css
-│   └── js/
-│       ├── maps.js
-│       └── script.js
-├── routes/
-│   ├── listing.js
-│   ├── review.js
-│   └── user.js
-├── utils/
-│   ├── ExpressError.js
-│   ├── wrapAsync.js
-│   └── middleware.js
-├── views/
-│   ├── includes/
-│   │   └── flash.ejs
-│   ├── layouts/
-│   │   └── boilerplate.ejs
-│   ├── listings/
-│   │   ├── footer.ejs
-│   │   ├── navbar.ejs
-│   │   ├── index.ejs
-│   │   └── show.ejs
-│   ├── users/
-│   │   ├── login.ejs
-│   │   ├── signup.ejs
-│   │   └── error.ejs
-│   └── error.ejs
-├── cloudConfig.js
-├── LICENSE
-├── middleware.js
-├── package-lock.json
-├── package.json
-├── app.js
-├── README.md
-└── schema.js
+Wanderlust/<br>
+├── controllers/<br>
+│   ├── listings.js<br>
+│   ├── reviews.js<br>
+│   └── users.js<br>
+├── init/<br>
+│   └── data.js<br>
+├── models/<br>
+│   ├── listing.js<br>
+│   └── review.js<br>
+├── public/<br>
+│   ├── css/<br>
+│   │   ├── rating.css<br>
+│   │   └── style.css<br>
+│   └── js/<br>
+│       ├── maps.js<br>
+│       └── script.js<br>
+├── routes/<br>
+│   ├── listing.js<br>
+│   ├── review.js<br>
+│   └── user.js<br>
+├── utils/<br>
+│   ├── ExpressError.js<br>
+│   ├── wrapAsync.js<br>
+│   └── middleware.js<br>
+├── views/<br>
+│   ├── includes/<br>
+│   │   └── flash.ejs<br>
+│   ├── layouts/<br>
+│   │   └── boilerplate.ejs<br>
+│   ├── listings/<br>
+│   │   ├── footer.ejs<br>
+│   │   ├── navbar.ejs<br>
+│   │   ├── index.ejs<br>
+│   │   └── show.ejs<br>
+│   ├── users/<br>
+│   │   ├── login.ejs<br>
+│   │   ├── signup.ejs<br>
+│   │   └── error.ejs<br>
+│   └── error.ejs<br>
+├── cloudConfig.js<br>
+├── LICENSE<br>
+├── middleware.js<br>
+├── package-lock.json<br>
+├── package.json<br>
+├── app.js<br>
+├── README.md<br>
+└── schema.js<br>
 
 
 
@@ -109,15 +109,15 @@ cd wanderlust
 
 npm install
 
-3.Environment variables
-Create a .env file in the root with:
+3.Environment variables<br>
+Create a .env file in the root with:<br>
 
-CLOUDINARY_CLOUD_NAME=your_cloud_name
-CLOUDINARY_KEY=your_api_key
-CLOUDINARY_SECRET=your_api_secret
-MAPBOX_TOKEN=your_mapbox_token
-DB_URL=your_mongodb_connection_string
-SECRET=your_session_secret
+CLOUDINARY_CLOUD_NAME=your_cloud_name<br>
+CLOUDINARY_KEY=your_api_key<br>
+CLOUDINARY_SECRET=your_api_secret<br>
+MAPBOX_TOKEN=your_mapbox_token<br>
+DB_URL=your_mongodb_connection_string<br>
+SECRET=your_session_secret<br>
 
 4.Run the app
 
